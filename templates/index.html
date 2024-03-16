@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Background remove</title>
+    <link rel="icon" href="data:image/png;base64,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">
     <style>
         body{
             align-items: center;
             text-align: center;
-            background-color: rgb(98, 104, 104) ;
-            backdrop-filter: blur(50px);
-
+            background: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsb2ZmaWNlMjBfYV9jbG9zZV91cF9vZl9hX2NvbG9yZnVsX2ZsdWlkX2Fic3RyYWN0X3BhbGVfd18xYTg4YWI2Ny1jMzdmLTQ2ZTctYjk5OC1hMjI2N2U3YmI4ODBfMi5qcGc.jpg);
+            background-position: center;
+            background-size: cover;
         }
         h1{
             margin-top: 40px;
-            color: white;
+            color: black;
             font-family: sans-serif;
         }
         form{
-            background-color:white;
+            background-color:transparent;
             height: 400px;
             width: 400px;
             border-radius: 5px;
@@ -30,10 +31,50 @@
             padding-left: 30px;
             font-family: sans-serif;
         }
-        #but{
-            margin-top: 70px;
-            border-radius: 5px;
-        }
+#but {
+    --width: 150px;
+    --timing: 2s;
+    border: 0;
+    width: var(--width);
+    padding-block: 1em;
+    color: white;
+    font-weight: bold;
+    font-size: small;
+    background: rgb(64, 192, 87);
+    transition: all 0.2s;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 40px;
+
+  }
+  
+  #but:hover {
+    background-image: linear-gradient(
+      to right,
+      rgb(250, 82, 82),
+      rgb(250, 82, 82) 16.65%,
+      rgb(190, 75, 219) 16.65%,
+      rgb(190, 75, 219) 33.3%,
+      rgb(76, 110, 245) 33.3%,
+      rgb(76, 110, 245) 49.95%,
+      rgb(64, 192, 87) 49.95%,
+      rgb(64, 192, 87) 66.6%,
+      rgb(250, 176, 5) 66.6%,
+      rgb(250, 176, 5) 83.25%,
+      rgb(253, 126, 20) 83.25%,
+      rgb(253, 126, 20) 100%,
+      rgb(250, 82, 82) 100%
+    );
+    animation: var(--timing) linear dance6123 infinite;
+    transform: scale(1.1) translateY(-1px);
+  }
+  
+  @keyframes dance6123 {
+    to {
+      background-position: var(--width);
+    }
+  }
+  
     </style>
 </head>
 <body>
